@@ -1,12 +1,8 @@
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    var person1Input = $("input#person1").val();
-
-
-    $(".person1").text(person1Input.toUpperCase());
-
+  $("#formShout").submit(function(event) {
+    var userOutput = $("input#userInput").val();
+    $(".userInput").text(userOutput.toUpperCase());
     $("#story").show();
-
     event.preventDefault();
   });
 });
